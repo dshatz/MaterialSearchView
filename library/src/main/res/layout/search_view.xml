@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    android:id="@+id/search_layout"
+<FrameLayout android:id="@+id/search_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="invisible">
+    android:visibility="invisible"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
         android:id="@+id/transparent_view"
@@ -43,21 +43,19 @@
                 android:id="@+id/action_up_btn"
                 style="@style/MSV_ImageButton"
                 android:layout_centerVertical="true"
-                android:src="@drawable/ic_action_navigation_arrow_back"/>
+                app:srcCompat="@drawable/ic_action_navigation_arrow_back"/>
 
             <ImageButton
                 android:id="@+id/action_voice_btn"
                 style="@style/MSV_ImageButton"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/ic_action_voice_search"/>
+                android:layout_alignParentRight="true" />
 
             <ImageButton
                 android:id="@+id/action_empty_btn"
                 style="@style/MSV_ImageButton"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_action_navigation_close"
                 android:visibility="gone"/>
 
             <View
